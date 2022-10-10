@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Nunito+Sans:wght@300;600;800&display=swap");
+
+/*Variables*/
+:root {
+  --main-color-one: #111517;
+  --main-color-two: #858585;
+  --main-color-three: #fafafa;
+  --main-color-four: #ffffff;
+  --main-color-text: #111517;
+  
+  
+  --weight-small: 300;
+  --weight-medium: 600;
+  --weight-heavy: 800;
+
+  --font-main: "Nunito Sans", sans-serif;
+
+  --border-radius: 0.3rem;
+
+  --box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  
+}
+  
+.dark-theme{
+  --main-color-one: #ffffff;
+  --main-color-two: #fafafa;
+  --main-color-three: #111517;
+  --main-color-four: #202A44;
+  --main-color-text: #ffffff;
+}
+
+/*Overall Style*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-main);
+  color: var(--main-color-one);
+}
+body {
+  background-color: var(--main-color-three) !important;
+}
+.boxShadow {
+  box-shadow: var(--box-shadow);
+}
+.borderRadius {
+  border-radius: 0.3rem;
+}
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.link:hover {
+  text-decoration: none;
+  color: inherit;
+}
+.container-fluid{
+  width: 100vw;
+  height: 100vh;
+}
+
+/*Headbar*/
+
+
+header {
+  background-color: var(--main-color-four);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Nunito Sans";
+  height: 10vh;
+  padding-left: 3%;
+  padding-right: 3%;
+  flex-wrap: nowrap;
+}
+header h1{
+  font-size: xx-large;
+  width: 80vw;
+  font-weight: var(--weight-heavy);
+  white-space: nowrap;
+  flex-shrink: 1;
+}
+
+.dark-themeButton {
+  color: var(--main-color-text);
+  border: none;
+  background-color: var(--main-color-four);
+  font-size: 14px;
+  font-weight: var(--weight-medium);
+  white-space: nowrap;
+}
+.dark-themeButton span{
+  width: 10px !important;
+}
+.dark-themeButton span:hover{
+  cursor: pointer;
+}
+.dark-themeButton i{
+  color: var(--main-color-text);
+}
+.dark-themeButton:focus{
+  border: none;
+  outline: none;
+  background-color: var(--main-color-four);
+}
+.dark-themeButton:active{
+  border: none;
+  outline: none;
+  background-color: var(--main-color-four);
+}
+
+
+/*Search and Filter*/
+
+.search-and-filter{
+  display: flex;
+  padding-right: 3%;
+  padding-left: 3%;
+  height: 10vh;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.search-bar-and-icon{
+  
+  display: flex;
+  background-color: var(--main-color-four);
+  width: 350px;
+  height: 40px;
+  padding-left: 1%;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: var(--box-shadow);
+}
+.search-bar-and-icon:focus-within{
+  border-color: lightskyblue !important;
+  border-style: solid !important;
+  border: 2px;
+}
+.search-bar{
+  border: none;
+  width: 100%;
+  height: 100%;
+  padding-left: 1%;
+  background-color: var(--main-color-four);
+}
+.search-bar:focus{
+  border: none;
+  outline: none;
+}
+.search-bar:active{
+  border: none;
+}
+.dropdown {
+  max-width: 200px;
+  position: relative;
+  display: block;
+  background-color: var(--main-color-four);
+  width: 200px;
+  height: 40px;
+}
+.dropbtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding-left: 3%;
+  padding-right: 3%;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: var(--main-color-four);
+  box-shadow: var(--box-shadow);
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  padding-left: 3%;
+  padding-right: 3%;
+  background-color: var(--main-color-four);
+  overflow: hidden;
+}
+.dropdown-content a{
+  text-decoration: none;
+  color: var(--main-color-two);
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: var(--main-color-three);
+  color: var(--main-color-two);
+  text-decoration: none;
+  overflow: hidden;
+}
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+
+.container-fluid {
+  margin-left: 3%;
+  margin-right: 3%;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: max-content;
+}
+.cardtext{
+  font-size: 14px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  color: var(--main-color-text);
+  background-color: var(--main-color-four);
+}
+
+.card-img-top {
+  height: 10rem;
+  object-fit: cover;
+}
+
+.backButton{
+  position: relative;
+  width: 150px !important;
+  height: 50px !important;
+  background-color: var(--main-color-four);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.backButton h1{
+  font-family: 'Nunito Sans';
+  text-align: center;
+  font-size: 20px;
+  margin: auto;
+}
+
+.Details{
+  display: block;
+  padding-inline: 2px;
+}
+.col{
+  display: flex;
+  justify-content: space-around;
+}
+.Details h1{
+  font-weight: var(--weight-heavy);
+  padding-bottom: 10px;
+}
+.Details strong{
+  font-weight: var(--weight-medium);
+}
+.Border-countries{
+  display: inline-block;
+}
+.Border-countries button{
+ margin: 0 5px;
+ background-color: var(--main-color-four);
+ border: 1px lightgray solid;
+  padding: 2px;
+ box-shadow: var(--box-shadow);
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  [class*="col-"] {
+    width: 50%;
+  }
+}
+
