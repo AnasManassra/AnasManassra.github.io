@@ -7,7 +7,7 @@ const Searchfilter = () => {
     <div className='search-and-filter'>
       <div className='search-bar-and-icon'>
       <FontAwesomeIcon icon={ faMagnifyingGlass}></FontAwesomeIcon>
-      <input className='search-bar' placeholder=' Search for country...'></input>
+      <input className='search-bar' placeholder=' Search for a country...'></input>
       </div>
       <div className='dropdown'>
       <div className="dropbtn">
