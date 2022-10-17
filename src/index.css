@@ -319,15 +319,62 @@ header h1{
   .scrolling::-webkit-scrollbar{
     display: none;
   }
+  .details-flag{
+    width: 350px;
+    height: 300px;
+  }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (max-width: 2040px) {
   [class*="col-"] {
     width: 50%;
   }
+  .details-flag{
+    width: 500px;
+    height: 450px;
+  }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (max-width: 1515px) {
   [class*="col-"] {
     width: 50%;
+  }
+  .details-flag{
+    width: 450px;
+    height: 400px;
+  }
+}
+@media only screen and (max-width: 1380px) {
+
+  .details-flag{
+    width: 400px;
+    height: 350px;
+  }
+}
+@media only screen and (max-width: 1215px) {
+
+  .details-flag{
+    width: 350px;
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 1080px) {
+
+  .details-flag{
+    width: 300px;
+    height: 250px;
+  }
+}
+@media only screen and (max-width: 991px) {
+
+  .details-flag{
+    width: 500px;
+    height: 450px;
+  }
+}
+@media only screen and (max-width: 540px) {
+
+  .details-flag{
+    width: 400px;
+    height: 350px;
   }
 }
 

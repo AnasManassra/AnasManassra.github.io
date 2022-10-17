@@ -2,24 +2,20 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import {Container, Row, Col} from 'react-bootstrap';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import de from '../de.svg'
+import ButtonWithIcon from '../components/ButtonWithIcon';
 const Details = () => {
   return (
     <div>
       <Container fluid style={{height:"90vh"}}>
         <Row style={{paddingTop:"3%", paddingLeft:"3%"}}>
-        <div class="backButton">
-          <FontAwesomeIcon icon={faArrowLeft}></FontAwesomeIcon>
-          <h1>Back</h1>
-          <Link to='/' className='stretched-link'></Link>
-        </div>
+            <ButtonWithIcon type="backButton" bicon={faArrowLeft} text="Back" path='/'/>
         </Row>
         <Row style={{paddingTop:"3%"}} lg={3} md={1} sm={1} xs={1}>
-          <Col style={{height:"50%", alignItems:"center"}}>
-            <img src={de} height={400} width={450}></img>
+          <Col style={{height:"50%"}} className="justify-content-sm-center">
+            <img src={de} className="details-flag"></img>
             </Col>
-        <Col style={{height:"50%", alignItems:"center"}}>
+        <Col style={{height:"50%", alignItems:"center", paddingLeft:"2rem"}} className="justify-content-lg-start justify-content-sm-center">
         <div className='Details'>
           <h1>Germany</h1><br></br>
           <p><strong>Native Name: </strong>Deutsche</p>
@@ -29,7 +25,7 @@ const Details = () => {
           <p><strong>Capital: </strong>Berlin</p>
         </div>
         </Col>
-        <Col style={{height:"50%", alignItems:"center"}}>
+        <Col style={{height:"50%", alignItems:"center"}} className="justify-content-lg-start justify-content-sm-center">
         <div className='Details'>
         <p><strong>Top Level Domain: </strong>.de</p>
           <p><strong>Currencies: </strong>Euro</p>
@@ -37,7 +33,7 @@ const Details = () => {
         </div>
         </Col>
         <Col></Col>
-        <Col style={{height:"50%", alignItems:"center", alignSelf:"center"}}>
+        <Col style={{height:"50%", paddingLeft:"1.4rem"}} className=" align-content-lg-center align-items-lg-start">
           <div className='Details'><strong>Border Countries: </strong>
           <div className='Border-countries'>
           <button>Denmark</button>
