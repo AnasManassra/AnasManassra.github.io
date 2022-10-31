@@ -8,13 +8,14 @@ import af from '../af.svg'
 import al from '../al.svg'
 import is from '../is.svg'
 import dz from '../dz.svg'
-const Favorites = () => {
+const Favorites = ({drop, favorites}) => {
   return (
-    <div className='Favorites'>
+    <div className='Favorites'  droppable onDrop={(e) => drop()} onDragOver={(e) => (e.preventDefault())}>
         <h1>Favorites</h1>
         <div className='Favorite-items'>
-          <Favorited name="Germany" flag={de}/>
-          <Favorited name="United States of America" flag={us}/>
+         {favorites.map((favorite)=> (
+          <Favorited name={favorite[0]} flag={favorite[1]} />
+         ))}
         </div>
     </div>
   )

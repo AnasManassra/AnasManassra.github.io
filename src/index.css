@@ -21,7 +21,7 @@
   
 }
   
-.dark-theme{
+.darkTheme{
   --main-color-one: #ffffff;
   --main-color-two: #fafafa;
   --main-color-three: #111517;
@@ -155,51 +155,22 @@ header h1{
 }
 .dropdown {
   max-width: 200px;
-  position: relative;
-  display: block;
   background-color: var(--main-color-four);
+  color: var(--main-color-text);
   width: 200px;
   height: 40px;
 }
 .dropbtn {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 100%;
-  padding-left: 3%;
-  padding-right: 3%;
+  width: 100%;
   overflow: hidden;
   white-space: nowrap;
   background-color: var(--main-color-four);
   box-shadow: var(--box-shadow);
 }
-.dropdown-content {
-  display: none;
-  position: absolute;
-  width: 100%;
-  z-index: 1;
-  padding-left: 3%;
-  padding-right: 3%;
-  background-color: var(--main-color-four);
-  overflow: hidden;
-}
-.dropdown-content a{
-  text-decoration: none;
-  color: var(--main-color-two);
-  display: block;
-}
-.dropdown-content a:hover {
-  background-color: var(--main-color-three);
-  color: var(--main-color-two);
-  text-decoration: none;
-  overflow: hidden;
-}
-.dropdown:hover .dropdown-content {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-
 
 .container-fluid {
   margin-left: 3%;
